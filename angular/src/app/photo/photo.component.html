@@ -1,0 +1,12 @@
+
+
+<div class="table table-dark table-hover">
+    <div class="child1" *ngFor="let photo of photos" >
+        <p>
+         <img src="{{photo.url}}" alt="" width="{{photo.width}}" height="{{photo.height}}">
+        </p>
+        <p>{{photo.id}}</p>
+        <p>{{photo.name}}</p>
+
+    </div>
+</div>

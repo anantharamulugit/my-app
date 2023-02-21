@@ -1,0 +1,21 @@
+.perent{
+    width: 100vw;
+    height: 100hv;
+    background-color: red;
+}
+.child1{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid rgb(42, 6, 246);
+    margin: 8px;
+}
+
+.visited{
+    color: gray;
+}
+
+.unvisited{
+    color: black;
+    font-weight: 900;
+}

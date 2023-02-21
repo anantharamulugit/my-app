@@ -1,0 +1,20 @@
+.perent{
+    width: 200vw;
+    height: 200hv;
+    background-color: red;
+    display: flex; 
+}
+.child1{
+    width: 450px;
+    height: auto;
+    background-color: white;
+    border: 2px solid green;
+    display: inline-block;
+    padding: 5px;
+    margin: 8px;
+    overflow: auto;
+
+}
+.child1:hover{
+    background-color: rgb(18, 226, 245);
+}

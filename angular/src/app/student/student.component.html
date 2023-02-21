@@ -1,0 +1,76 @@
+<div>
+    <input type="text" placeholder="search" [(ngModel)]="term" (keypress)="search()">
+    <input type="text" placeholder="company" [(ngModel)]="term1" (keypress)="search1()">
+    <button (click)="onlyPlacedStudents()">onlyPlacedStudent</button> 
+    <br>
+    <button (click)="notplacedstudents()">notplacedstudent</button>
+    <button (click)="packagelowtohigh()">package low to high</button>
+    <button (click)="packagehightolow()">package high to low</button>
+    <br>
+    <button (click)="bonus()">bonus</button>
+    <button (click)="cuttings()">cuttings</button>
+    <button (click)="total()">total</button>
+    <br>
+
+    <button (click)="totalstudunt()">total student</button>
+</div>
+<div>
+    <label>name</label>
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <label>dob</label>
+    <input type="date" [(ngModel)]="dob">
+    <br>
+    
+    <label>isplaced</label>
+    <input type="text" [(ngModel)]="isplaced">
+    <br>
+    <label>company</label>
+    <input type="text" [(ngModel)]="company">
+    <br>
+    <label>packege</label>
+    <input type="number" [(ngModel)]="packege">
+    <br>
+    <label>education</label>
+    <input type="radio" name="raju" value="true" [(ngModel)]="education">
+    <label>YES</label>
+    <input type="radio" name="raju" value="false" [(ngModel)]="education">
+    <label>NO</label>
+    <button (click)="add()">add</button>
+    
+
+    
+</div>
+
+
+
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th>s.no</th>
+            <th>name</th>
+            <th>dob</th>
+            <th>educsation</th>
+            <th>isplaced</th>
+            <th>company</th>
+            <th>package</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students let i=index">
+            <td>{{ i+1 }}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.dob}}</td>
+            <td>{{student.isplaced}}</td>
+            <td>{{student.education}}</td>
+            <td>{{student.company}}</td>
+            <td>{{student.package}}</td>
+            
+            <td>
+                <button (click)="delete(i)">delete</button>
+            </td>
+            
+        </tr>
+    </tbody>
+</table>

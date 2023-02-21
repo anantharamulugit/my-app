@@ -1,0 +1,14 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    
+}
+.child1{
+    width: 10%;
+    height: 10%;
+    background-color: rgb(187, 235, 13);
+    
+    
+
+}

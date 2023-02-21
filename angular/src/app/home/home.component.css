@@ -1,0 +1,6 @@
+p{
+    color: rgb(7, 23, 246);
+}
+p:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(163, 247, 17);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    
+}
+button::marker{
+        width: 30%;
+        height: 10%;
+        background-color: rgb(135, 181, 225);
+        justify-content: center;
+        align-items: center;
+        border: 2px solid blue;
+}
+label:hover{
+    width: 200px;
+}
+form{
+    width: 30%;
+    height: 40%;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    
+}

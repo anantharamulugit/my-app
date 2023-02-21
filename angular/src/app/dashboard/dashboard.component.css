@@ -1,0 +1,23 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    text-align: center;
+    display: flex;
+
+}
+.left{
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(57, 214, 22);
+    display: auto;
+}
+.right{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(245, 247, 248);
+    overflow: auto;
+}
+label:hover{
+    width: 300px;
+}

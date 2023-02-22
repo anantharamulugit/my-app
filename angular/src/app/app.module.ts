@@ -30,6 +30,13 @@ import { EmailComponent } from './email/email.component';
 import { PhotoComponent } from './photo/photo.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { CounterComponent } from './counter/counter.component';
+import { DisplayComponent } from './display/display.component';
+import { ItemsComponent } from './items/items.component';
+import { NavComponent } from './nav/nav.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
 
 
 @NgModule({
@@ -60,6 +67,13 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     PhotoComponent,
     CreateUserComponent,
     VehicleDetailsComponent,
+    ParentComponent,
+    ChildComponent,
+    CounterComponent,
+    DisplayComponent,
+    ItemsComponent,
+    NavComponent,
+    CartlistComponent,
    
   ],
   imports: [

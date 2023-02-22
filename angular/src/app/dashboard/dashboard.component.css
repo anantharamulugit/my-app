@@ -10,7 +10,8 @@
     width: 30%;
     height: 100vh;
     background-color: rgb(57, 214, 22);
-    display: auto;
+    
+    overflow: auto;
 }
 .right{
     width: 70%;

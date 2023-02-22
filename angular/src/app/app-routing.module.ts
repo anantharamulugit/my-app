@@ -4,7 +4,10 @@ import { AutheticationGuard } from './authetication.guard';
 import { BankComponent } from './bank/bank.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CartComponent } from './cart/cart.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
+import { ChildComponent } from './child/child.component';
 import { CompanyComponent } from './company/company.component';
+import { CounterComponent } from './counter/counter.component';
 import { CreatVehicleComponent } from './creat-vehicle/creat-vehicle.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -15,7 +18,10 @@ import { EmployesComponent } from './employes/employes.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
+import { ItemsComponent } from './items/items.component';
 import { LoginComponent } from './login/login.component';
+import { NavComponent } from './nav/nav.component';
+import { ParentComponent } from './parent/parent.component';
 import { PhoneComponent } from './phone/phone.component';
 import { PhotoComponent } from './photo/photo.component';
 import { ProductComponent } from './product/product.component';
@@ -55,7 +61,15 @@ const routes: Routes = [
       {path:'photo',component:PhotoComponent},  
       {path:'create-user',component:CreateUserComponent},
       {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-      {path:'edit-vehicle/:id',component:CreatVehicleComponent}   //same component
+      {path:'edit-vehicle/:id',component:CreatVehicleComponent} ,//same component
+      {path:'parent',component:ParentComponent},
+      {path:'child',component:ChildComponent},
+      {path:'counter',component:CounterComponent},
+      {path:'items',component:ItemsComponent},
+      {path:'nav',component:NavComponent},
+      {path:'cartlist',component:CartlistComponent},
+
+
 
     ]
   },

@@ -1,5 +1,6 @@
 import { createComponent, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutCeoComponent } from './aboutus/about-ceo/about-ceo.component';
 import { AutheticationGuard } from './authetication.guard';
 import { BankComponent } from './bank/bank.component';
 import { CalculatorComponent } from './calculator/calculator.component';
@@ -68,6 +69,7 @@ const routes: Routes = [
       {path:'items',component:ItemsComponent},
       {path:'nav',component:NavComponent},
       {path:'cartlist',component:CartlistComponent},
+      {path:'about-ceo',component:AboutCeoComponent}
 
 
 

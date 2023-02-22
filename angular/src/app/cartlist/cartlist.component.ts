@@ -9,6 +9,7 @@ import { CommonService } from '../common.service';
 export class CartlistComponent {
   constructor(private _commenService:CommonService){}
   public cartCount:number=0;
+  
 
   
 

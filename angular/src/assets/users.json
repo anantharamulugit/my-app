@@ -1,0 +1,17 @@
+[
+    {
+        "name":"a",
+        "phone":123545,
+        "salary":12
+    },
+    {
+        "name":"b",
+        "phone":993455,
+        "salary":13
+    },
+    {
+        "name":"c",
+        "phone":893451,
+        "salary":14
+    }
+]

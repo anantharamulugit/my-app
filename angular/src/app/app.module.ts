@@ -43,6 +43,7 @@ import { PricePipe } from './price.pipe';
 import { SalaryPipe } from './salary.pipe';
 import { ImpPipe } from './imp.pipe';
 import { ImpDirective } from './imp.directive';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
@@ -84,6 +85,7 @@ import { ImpDirective } from './imp.directive';
     SalaryPipe,
     ImpPipe,
     ImpDirective,
+    UsersComponent,
    
   ],
   imports: [

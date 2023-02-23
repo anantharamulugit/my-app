@@ -31,6 +31,7 @@ import { RegistetionComponent } from './registetion/registetion.component';
 import { StudentTaskComponent } from './student-task/student-task.component';
 import { StudentComponent } from './student/student.component';
 import { TaskComponent } from './task/task.component';
+import { UsersComponent } from './users/users.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 
@@ -73,7 +74,8 @@ const routes: Routes = [
       {
         path: 'contactur',
         loadChildren: () => import('./contactur/contactur.module').then(m => m.ContacturModule)
-      }
+      },
+      {path:'users',component:UsersComponent}
     ]}
 
 ];

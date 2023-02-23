@@ -41,6 +41,8 @@ import { AboutCeoComponent } from './aboutus/about-ceo/about-ceo.component';
 import { AboutusModule } from './aboutus/aboutus.module';
 import { PricePipe } from './price.pipe';
 import { SalaryPipe } from './salary.pipe';
+import { ImpPipe } from './imp.pipe';
+import { ImpDirective } from './imp.directive';
 
 
 @NgModule({
@@ -80,6 +82,8 @@ import { SalaryPipe } from './salary.pipe';
     CartlistComponent,
     PricePipe,
     SalaryPipe,
+    ImpPipe,
+    ImpDirective,
    
   ],
   imports: [

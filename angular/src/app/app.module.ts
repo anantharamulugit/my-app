@@ -39,6 +39,8 @@ import { NavComponent } from './nav/nav.component';
 import { CartlistComponent } from './cartlist/cartlist.component';
 import { AboutCeoComponent } from './aboutus/about-ceo/about-ceo.component';
 import { AboutusModule } from './aboutus/aboutus.module';
+import { PricePipe } from './price.pipe';
+import { SalaryPipe } from './salary.pipe';
 
 
 @NgModule({
@@ -76,6 +78,8 @@ import { AboutusModule } from './aboutus/aboutus.module';
     ItemsComponent,
     NavComponent,
     CartlistComponent,
+    PricePipe,
+    SalaryPipe,
    
   ],
   imports: [

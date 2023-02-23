@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { filter, Observable } from 'rxjs';
+import { Vehicle } from '../vehicle';
 import { VehicleService } from '../vehicle.service';
 
 @Component({
@@ -10,7 +11,8 @@ import { VehicleService } from '../vehicle.service';
 })
 export class VehicleComponent {
   public term:string="";
-  public vehicles:any=[];
+  public vehicles:Vehicle[]=[];
+
   public column:string="";
   public order:string="";
   
@@ -19,7 +21,7 @@ export class VehicleComponent {
 
   constructor(private _vehicleSevices:VehicleService,private _router:Router){
     _vehicleSevices.getVehicle().subscribe(
-      (data:any)=>{this.vehicles=data;},
+      (data:Vehicle[])=>{this.vehicles=data;},
       (err:any)=>{alert("Inetrnal server error")})}
 
   filter(){

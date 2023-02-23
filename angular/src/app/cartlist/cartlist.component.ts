@@ -7,10 +7,10 @@ import { CommonService } from '../common.service';
   styleUrls: ['./cartlist.component.css']
 })
 export class CartlistComponent {
-  constructor(private _commenService:CommonService){}
+
   public cartCount:number=0;
-  
 
-  
-
+  constructor(private _commenService:CommonService){
+    _commenService.getValue().subscribe(
+      (data:any)=>{this.cartCount=data;})}
 }

@@ -1,5 +1,5 @@
 import { createComponent, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadingStrategy, RouterModule, Routes } from '@angular/router';
 import { AboutCeoComponent } from './aboutus/about-ceo/about-ceo.component';
 import { AutheticationGuard } from './authetication.guard';
 import { BankComponent } from './bank/bank.component';
@@ -69,17 +69,17 @@ const routes: Routes = [
       {path:'items',component:ItemsComponent},
       {path:'nav',component:NavComponent},
       {path:'cartlist',component:CartlistComponent},
-      {path:'about-ceo',component:AboutCeoComponent}
-
-
-
-    ]
-  },
+      {path:'about-ceo',component:AboutCeoComponent},
+      {
+        path: 'contactur',
+        loadChildren: () => import('./contactur/contactur.module').then(m => m.ContacturModule)
+      }
+    ]}
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadingStrategy})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

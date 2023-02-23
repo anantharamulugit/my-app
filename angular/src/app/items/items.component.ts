@@ -7,9 +7,9 @@ import { CommonService } from '../common.service';
   styleUrls: ['./items.component.css']
 })
 export class ItemsComponent {
-  constructor(private _commonSeverce:CommonService){}
+  constructor(private _commonService:CommonService){}
   add(){
-    this._commonSeverce.setValue();
+    this._commonService.setValue();
   }
 
 }

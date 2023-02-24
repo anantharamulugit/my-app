@@ -22,6 +22,7 @@ import { HomeComponent } from './home/home.component';
 import { ItemsComponent } from './items/items.component';
 import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
+import { NotifyGuard } from './notify.guard';
 import { ParentComponent } from './parent/parent.component';
 import { PhoneComponent } from './phone/phone.component';
 import { PhotoComponent } from './photo/photo.component';
@@ -56,12 +57,12 @@ const routes: Routes = [
       {path:'vehicle',component:VehicleComponent},
       {path:'flipkart',component:FlipkartComponent},
       {path:'bank',component:BankComponent},
-      {path:"creat-vehicle",component:CreatVehicleComponent},  //same component
+      {path:"creat-vehicle",component:CreatVehicleComponent, canActivate:[NotifyGuard]},  //same component
       {path:'student-task',component:StudentTaskComponent},
       {path:'task',component:TaskComponent},
       {path:'email',component:EmailComponent},
       {path:'photo',component:PhotoComponent},  
-      {path:'create-user',component:CreateUserComponent},
+      {path:'create-user',component:CreateUserComponent, canDeactivate:[NotifyGuard]},
       {path:'vehicle-details/:id',component:VehicleDetailsComponent},
       {path:'edit-vehicle/:id',component:CreatVehicleComponent} ,//same component
       {path:'parent',component:ParentComponent},

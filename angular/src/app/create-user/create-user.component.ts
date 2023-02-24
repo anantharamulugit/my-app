@@ -43,11 +43,7 @@ export class CreateUserComponent {
     console.log(this.userForm);
     this.userForm.markAllAsTouched();
     if(this.userForm.valid){
-      alert("form valid and sumitted succesfully")
-    }
-  }
-
-}
+      alert("form valid and sumitted succesfully")}}}
 
 
 function emailDomain(control: AbstractControl): ValidationErrors | null{
